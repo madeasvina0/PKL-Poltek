@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bottom_home"
+        android:icon="@drawable/baseline_home_24"
+        android:title="Dashboard"/>
+    <item
+        android:id="@+id/bottom_discount"
+        android:icon="@drawable/baseline_discount_24"
+        android:title="Promotion"/>
+    <item
+        android:id="@+id/bottom_location"
+        android:icon="@drawable/baseline_location_on_24"
+        android:title="Store Location"/>
+    <item
+        android:id="@+id/bottom_history"
+        android:icon="@drawable/baseline_history_24"
+        android:title="Transaction History"/>
+    <item
+        android:id="@+id/bottom_profile"
+        android:icon="@drawable/baseline_account_circle_24"
+        android:title="Profile"/>
+
+</menu>

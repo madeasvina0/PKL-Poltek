@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Aplikasi Member</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="head_1">Cabang Denpasar </string>
+    <string name="head_2">Cabang Tabanan </string>
+    <string name="head_3">Cabang Singaraja </string>
+    <string name="head_4">Cabang Gianyar </string>
+    <string name="head_5">Cabang Karangasem </string>
+    <string name="head_6">Cabang Klungkung </string>
+    <string name="head_7">Cabang Badung </string>
+    <string name="head_8">Cabang Bangli </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="desc_a"> Jln. Tukad Balian No 99 , Sanur</string>
+    <string name="desc_b"> Jln. Tukad Balian No 99 , Sanur</string>
+    <string name="desc_c"> Jln. Tukad Balian No 99 , Sanur</string>
+    <string name="desc_d"> Jln. Tukad Balian No 99 , Sanur</string>
+    <string name="desc_e"> Jln. Tukad Balian No 99 , Sanur</string>
+    <string name="desc_f"> Jln. Tukad Balian No 99 , Sanur</string>
+    <string name="desc_g"> Jln. Tukad Balian No 99 , Sanur</string>
+    <string name="desc_h"> Jln. Tukad Balian No 99 , Sanur</string>
+
+    <string name="detail_produk"> Apel Fuji merupakan apel berukuran besar dengan rasa manis menyerupai madu.
+        Apel ini memiliki tekstur yang keras, segar, dan berair, dengan serat buah yang sangat padat.
+        Dengan tekstur dan kandungan yang dimilikinya, banyak orang yang merekomendasikan untuk mengonsumsi apel fuji secara rutin setiap harinya</string>
+
+    <string name="detail_promo">Buah ceri yang banyak terdapat di pasaran saat ini merupakan hasil kultivar dari berbagai macam jenis ceri, misalnya Prunus avium yang menghasilkan buah manis dan Prunus cerasus yang buahnya terasa agak asam.
+
+Tanaman ceri terus dikembangbiakkan dan dikembangkan untuk menciptakan kultivar yang lebih baik. Buahnya yang berukuran kecil dan cantik, sangat cocok dijadikan garnish atau hiasan, terutama untuk makanan penutup dan makanan kecil.</string>
+
+</resources>
