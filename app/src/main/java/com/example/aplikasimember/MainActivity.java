@@ -47,10 +47,14 @@ public class MainActivity extends AppCompatActivity  {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
+
+        fragmentTransaction.add(R.id.frame_layout, new Fragment());
+        fragmentTransaction.commit();
 
 
         bottomNavigationView= findViewById(R.id.bottom_navigation);
-        frameLayout = findViewById(R.id.frameLayout);
+        frameLayout = findViewById(R.id.frame_layout);
 
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -89,10 +93,10 @@ public class MainActivity extends AppCompatActivity  {
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
 
                 if (isAppInitialized) {
-                    fragmentTransaction.add(R.id.frameLayout, fragment);
+                    fragmentTransaction.add(R.id.frame_layout, fragment);
 
                 } else {
-                    fragmentTransaction.replace(R.id.frameLayout,fragment);
+                    fragmentTransaction.replace(R.id.frame_layout,fragment);
                 }
 
                 fragmentTransaction.commit();

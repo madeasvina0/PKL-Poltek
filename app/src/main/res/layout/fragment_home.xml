@@ -114,14 +114,20 @@
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="20dp"
                 android:text="Promo"
                 android:textColor="@color/warna_harga"
                 android:textSize="18sp"
                 android:textStyle="bold" />
 
-
-
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:text="Lainnya"
+                android:layout_marginLeft="300dp"
+                android:layout_marginTop="-30dp"
+                android:id="@+id/btnFragment1"
+                tools:ignore="HardcodedText" />
 
 
             <GridLayout
@@ -535,6 +541,8 @@
                 android:textColor="@color/warna_harga"/>
 
 
+
+
             <GridLayout
                 android:layout_width="match_parent"
                 android:layout_height="388dp"
@@ -945,6 +953,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
+        android:layout_marginTop="840dp"
         android:orientation="vertical"
         app:itemPaddingBottom="10dp"
         app:menu="@menu/bottom_menu"
