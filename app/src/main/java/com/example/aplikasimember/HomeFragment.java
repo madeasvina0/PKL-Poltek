@@ -6,15 +6,25 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import java.util.ArrayList;
+
 public class HomeFragment extends Fragment {
 
-    @Nullable
+    private ArrayList<Product> productArrayList;
+    private String[] productNames;
+    private Double[] productNormalPrices;
+    private Double[] productMemberPrices;
+    private int[] imageResourceID;
+    private RecyclerView recyclerview;
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
@@ -32,5 +42,71 @@ public class HomeFragment extends Fragment {
         });
 
         return view;
+    }
+
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
+        dataInitialize();
+
+        recyclerview = view.findViewById(R.id.recyclerview);
+        recyclerview.setLayoutManager(new GridLayoutManager(getContext(),3));
+        recyclerview.setHasFixedSize(true);
+        ProductAdapter ProductAdapter = new ProductAdapter(getContext(), productArrayList);
+        recyclerview.setAdapter(ProductAdapter);
+        ProductAdapter.notifyDataSetChanged();
+    }
+
+    private void dataInitialize() {
+
+        productArrayList = new ArrayList<>();
+
+        productNames = new String[]{
+                "Item A",
+                "Item B",
+                "Item C",
+                "Item D",
+                "Item E",
+                "Item F",
+        };
+
+        productNormalPrices = new Double[]{
+                2000.00,
+                2000.00,
+                2000.00,
+                2000.00,
+                2000.00,
+                2000.00
+        };
+
+
+        productMemberPrices = new Double[]{
+                1000.00,
+                1000.00,
+                1000.00,
+                1000.00,
+                1000.00,
+                1000.00
+        };
+
+
+        imageResourceID = new int[]{
+
+                R.drawable.apple,
+                R.drawable.apple,
+                R.drawable.apple,
+                R.drawable.apple,
+                R.drawable.apple,
+                R.drawable.apple
+
+        };
+
+        for (int i =0; i< productNames.length; i++){
+
+            Product product = new Product(productNames[i], productNormalPrices[i], productMemberPrices[i] , imageResourceID[i]);
+            productArrayList.add(product);
+        }
+
     }
 }
