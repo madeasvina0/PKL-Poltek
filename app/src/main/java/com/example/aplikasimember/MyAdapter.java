@@ -1,12 +1,15 @@
 package com.example.aplikasimember;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.material.imageview.ShapeableImageView;
@@ -29,21 +32,31 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
     @NonNull
     @Override
-    public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public MyAdapter.MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
         View view = LayoutInflater.from(context).inflate(R.layout.list_item, parent, false);
-        return new MyViewHolder(view);
+        return new MyAdapter.MyViewHolder(view);
     }
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
 
         Location location = locationArrayList.get(position);
-        holder.tvHeading.setText(location.heading);
-        holder.tvDesc.setText(location.desc);
-        holder.titleImage.setImageResource(location.titleImage);
+        holder.txtCabang.setText(""+location.cabang);
+        holder.txtDescLoc.setText(""+location.desc);
+        holder.imgLocation.setImageResource(location.titleImage);
 
 
+        //handling click
+        holder.cvLocation.setOnClickListener(view -> {
+            //pindah ke activity product detail
+            Intent intent = new Intent(this.context, DetailLokasiActivity.class);
+            intent.putExtra("location_cabang", location.cabang);
+            intent.putExtra("location_desc", location.desc);
+            intent.putExtra("location_img", location.titleImage);
+            this.context.startActivity(intent);
+
+        });
     }
 
     @Override
@@ -53,15 +66,20 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
     public static class MyViewHolder extends RecyclerView.ViewHolder{
 
-        ShapeableImageView titleImage;
-        TextView tvHeading;
-        TextView tvDesc;
+
+        TextView txtCabang;
+        TextView txtDescLoc;
+        ImageView imgLocation;
+        CardView cvLocation;
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
-            titleImage = itemView.findViewById(R.id.title_image);
-            tvHeading = itemView.findViewById(R.id.tvHeading);
-            tvDesc = itemView.findViewById(R.id.tvDesc);
+            //inisialisasi adapter ke view
+            txtCabang = itemView.findViewById(R.id.txtCabang);
+            txtDescLoc = itemView.findViewById(R.id.txtDescLoc);
+            imgLocation = itemView.findViewById(R.id.imgLocation);
+            cvLocation = itemView.findViewById(R.id.cvLocation);
+
         }
     }
 }

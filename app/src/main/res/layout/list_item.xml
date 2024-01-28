@@ -12,43 +12,50 @@
     android:foreground="?android:attr/selectableItemBackground">
 
 
-    <com.google.android.material.imageview.ShapeableImageView
-        android:layout_width="60dp"
-        android:layout_height="60dp"
-        android:id="@+id/title_image"
-        android:src="@drawable/location2"
-        android:scaleType="centerCrop"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:shapeAppearanceOverlay="@style/roundedImageViewRounded"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:layout_width="0dp"
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cvLocation"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/tvHeading"
-        android:text="Lokasi Cabang"
-        android:textColor="@color/black"
-        android:textSize="16dp"
-        android:textStyle="bold"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/title_image"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:cardCornerRadius="15dp"
+        app:cardElevation="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="390dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgLocation"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/location2" />
+
+            <TextView
+                android:id="@+id/txtCabang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="Cabang Denpasar"
+                android:textStyle="bold"
+                android:textSize="24sp"/>
 
 
-    <TextView
-        android:id="@+id/tvDesc"
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:text="Alamat Cabang"
-        android:textColor="@color/black"
-        android:textSize="14sp"
-        app:layout_constraintStart_toEndOf="@+id/title_image"
-        app:layout_constraintTop_toBottomOf="@+id/tvHeading"
-        android:layout_marginStart="20dp"/>
+            <TextView
+                android:id="@+id/txtDescLoc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="-330dp"
+                android:text="Jln. Tukad Balian No 99, Sanur"
+                android:textSize="18sp" />
+
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

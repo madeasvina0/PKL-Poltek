@@ -16,6 +16,9 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="q">
         <activity
+            android:name=".DetailLokasiActivity"
+            android:exported="false" />
+        <activity
             android:name=".HistoryActivity"
             android:exported="false" />
         <activity
@@ -26,6 +29,9 @@
             android:exported="false" />
         <activity
             android:name=".DetailProdukActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DetailPromoActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

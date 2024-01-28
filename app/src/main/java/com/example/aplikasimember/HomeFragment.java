@@ -62,7 +62,7 @@ public class HomeFragment extends Fragment {
         dataInitialize();
 
         recyclerview = view.findViewById(R.id.recyclerview);
-        recyclerview.setLayoutManager(new GridLayoutManager(getContext(), 3));
+        recyclerview.setLayoutManager(new GridLayoutManager(getActivity(), 1, GridLayoutManager.HORIZONTAL, false));
         recyclerview.setHasFixedSize(true);
         ProductAdapter ProductAdapter = new ProductAdapter(getContext(), productArrayList);
         recyclerview.setAdapter(ProductAdapter);
@@ -71,6 +71,7 @@ public class HomeFragment extends Fragment {
         dataInitialized();
 
         horizontalRv = view.findViewById(R.id.horizontalRv);
+        horizontalRv.setLayoutManager(new GridLayoutManager(getActivity(), 1, GridLayoutManager.HORIZONTAL, false));
         horizontalRv.setHasFixedSize(true);
         PromoAdapter PromoAdapter = new PromoAdapter(getContext(), promoArrayList);
         horizontalRv.setAdapter(PromoAdapter);

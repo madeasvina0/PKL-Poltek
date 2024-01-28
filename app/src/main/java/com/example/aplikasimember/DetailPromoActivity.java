@@ -18,7 +18,7 @@ public class DetailPromoActivity extends AppCompatActivity {
     TextView txtHargaNormal;
     TextView txtHargaPromo;
 
-    @SuppressLint("MissingInflatedId")
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,7 +30,7 @@ public class DetailPromoActivity extends AppCompatActivity {
         promoHargaNormal = getIntent().getDoubleExtra("promo_harga_normal",0);
 
         //deklarasi view
-        txtNama = findViewById(R.id.txtNama);
+        txtNama = findViewById(R.id.txtName);
         txtHargaNormal = findViewById(R.id.txtHargaNormal);
         txtHargaPromo = findViewById(R.id.txtHargaPromo);
 

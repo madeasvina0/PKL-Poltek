@@ -14,7 +14,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -33,16 +33,16 @@
                     <ImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:src="@drawable/arrowbalik"
-                        android:layout_marginTop="10dp"/>
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/arrowbalik" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Produk Detail"
-                        android:textSize="20sp"
                         android:layout_marginTop="20dp"
-                        android:textColor="@color/white"/>
+                        android:text="Produk Detail"
+                        android:textColor="@color/white"
+                        android:textSize="20sp" />
 
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="wrap_content"
@@ -64,10 +64,10 @@
                             android:id="@+id/imageView"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_marginRight="20dp"
                             android:src="@drawable/keranjang"
                             app:layout_constraintBottom_toBottomOf="parent"
                             app:layout_constraintEnd_toStartOf="@+id/imageView2"
-                            android:layout_marginRight="20dp"
                             app:layout_constraintTop_toTopOf="parent"
                             tools:ignore="MissingConstraints" />
 
@@ -85,94 +85,95 @@
                 android:id="@+id/imgPromo"
                 android:layout_width="250dp"
                 android:layout_height="250dp"
-                android:src="@drawable/berry"
+                android:layout_gravity="center"
                 android:layout_marginTop="-300dp"
-                android:layout_gravity="center"/>
+                android:src="@drawable/berry" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="130dp"
-                android:background="@color/white"
-                android:layout_marginTop="70dp"/>
+                android:layout_marginTop="70dp"
+                android:background="@color/white" />
 
             <TextView
-                android:id="@+id/txtNama"
+                android:id="@+id/txtName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Cherry 1 Kg"
+                android:layout_marginStart="10dp"
                 android:layout_marginTop="-120dp"
-                android:layout_marginStart="10dp"
-                android:textSize="22sp"
-                android:textStyle="bold"/>
+                android:text="Cherry 1 Kg"
+                android:textSize="23sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Masa berlaku promo 22 Desember 2023 - 1 Januari 2023"
                 android:layout_marginStart="10dp"
-                android:textStyle="italic"
-                android:textColor="@color/promo"/>
+                android:text="Masa berlaku promo 22 Desember 2023 - 1 Januari 2023"
+                android:textColor="@color/promo"
+                android:textStyle="italic" />
+
             <ImageView
                 android:layout_width="100dp"
                 android:layout_height="50dp"
-                android:src="@drawable/fullbintang"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="20dp"/>
+                android:layout_marginTop="20dp"
+                android:src="@drawable/fullbintang" />
 
 
             <TextView
                 android:layout_width="100dp"
                 android:layout_height="match_parent"
-                android:text="Non Member"
                 android:layout_marginStart="205dp"
                 android:layout_marginTop="-25dp"
-                android:textStyle="italic"/>
+                android:text="Non Member"
+                android:textStyle="italic" />
 
             <TextView
                 android:id="@+id/txtHargaNormal"
                 android:layout_width="100dp"
                 android:layout_height="match_parent"
-                android:text="Rp 40.000"
-                android:textStyle="bold"
-                android:textSize="18sp"
                 android:layout_marginStart="200dp"
                 android:layout_marginTop="-50dp"
-                android:textColor="@color/black"/>
+                android:text="Rp 40.000"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="100dp"
                 android:layout_height="match_parent"
-                android:text="Member Only"
                 android:layout_marginStart="310dp"
                 android:layout_marginTop="7dp"
-                android:textStyle="bold|italic"/>
+                android:text="Member Only"
+                android:textStyle="bold|italic" />
 
             <TextView
                 android:id="@+id/txtHargaPromo"
                 android:layout_width="100dp"
                 android:layout_height="match_parent"
-                android:text="Rp 20.000"
-                android:textStyle="bold"
-                android:textSize="18sp"
                 android:layout_marginStart="310dp"
                 android:layout_marginTop="-51dp"
-                android:textColor="@color/warna_harga"/>
+                android:text="Rp 20.000"
+                android:textColor="@color/warna_harga"
+                android:textSize="18sp"
+                android:textStyle="bold" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="120dp"
+                android:layout_marginTop="50dp"
                 android:background="@color/white"
-                android:orientation="vertical"
-                android:layout_marginTop="50dp">
+                android:orientation="vertical">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Tersedia 5 pcs"
-                    android:textStyle="bold"
-                    android:textSize="20sp"
+                    android:layout_marginStart="10dp"
                     android:layout_marginTop="5dp"
-                    android:layout_marginStart="10dp"/>
+                    android:text="Tersedia 5 pcs"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
 
                 <ImageView
                     android:layout_width="wrap_content"
@@ -184,35 +185,32 @@
             </LinearLayout>
 
 
-
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:orientation="vertical"
-                android:background="@color/white">
+                android:background="@color/white"
+                android:orientation="vertical">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
                     android:text="Deskripsi"
-                    android:textStyle="bold"
                     android:textSize="18sp"
-                    android:layout_marginStart="5dp"/>
+                    android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="@string/detail_promo"
-                    android:layout_marginTop="10dp"
                     android:layout_marginStart="10dp"
-                    android:textSize="18sp"/>
+                    android:layout_marginTop="10dp"
+                    android:text="@string/detail_promo"
+                    android:textSize="18sp" />
             </LinearLayout>
 
 
-
         </LinearLayout>
-
 
 
     </ScrollView>
