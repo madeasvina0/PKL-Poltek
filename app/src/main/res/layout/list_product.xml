@@ -10,16 +10,16 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cvProduct"
-        android:layout_width="120dp"
-        android:layout_height="150dp"
+        android:layout_width="150dp"
+        android:layout_height="160dp"
         app:cardCornerRadius="15dp"
         app:cardElevation="12dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
-            android:layout_width="120dp"
-            android:layout_height="match_parent"
+            android:layout_width="150dp"
+            android:layout_height="170dp"
             android:orientation="vertical">
 
             <ImageView
@@ -39,9 +39,9 @@
 
             <TextView
                 android:layout_width="50dp"
-                android:layout_height="25dp"
-                android:layout_marginStart="5dp"
-                android:layout_marginTop="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="25dp"
                 android:text="No Member"
                 android:textSize="10sp"
                 android:textStyle="italic" />
@@ -49,7 +49,7 @@
             <TextView
                 android:layout_width="60dp"
                 android:layout_height="20dp"
-                android:layout_marginLeft="60dp"
+                android:layout_marginLeft="80dp"
                 android:layout_marginTop="-20dp"
                 android:text="Member Only"
                 android:textSize="10sp"
@@ -59,8 +59,8 @@
                 android:id="@+id/txtPromoPrice"
                 android:layout_width="50dp"
                 android:layout_height="20dp"
-                android:layout_marginStart="5dp"
-                android:layout_marginTop="-40dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="-45dp"
                 android:text="Rp 50.000"
                 android:textSize="10sp"
                 android:textStyle="italic" />
@@ -69,7 +69,7 @@
                 android:id="@+id/txtNormalPrice"
                 android:layout_width="50dp"
                 android:layout_height="20dp"
-                android:layout_marginLeft="65dp"
+                android:layout_marginLeft="85dp"
                 android:layout_marginTop="-20dp"
                 android:text="Rp 25.000"
                 android:textColor="@color/warna_harga"

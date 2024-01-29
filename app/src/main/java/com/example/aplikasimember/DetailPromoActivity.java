@@ -14,7 +14,7 @@ public class DetailPromoActivity extends AppCompatActivity {
     Double promoHargaNormal;
     int imgPromo;
 
-    TextView txtNama;
+    TextView txtName;
     TextView txtHargaNormal;
     TextView txtHargaPromo;
 
@@ -30,7 +30,7 @@ public class DetailPromoActivity extends AppCompatActivity {
         promoHargaNormal = getIntent().getDoubleExtra("promo_harga_normal",0);
 
         //deklarasi view
-        txtNama = findViewById(R.id.txtName);
+        txtName = findViewById(R.id.txtName);
         txtHargaNormal = findViewById(R.id.txtHargaNormal);
         txtHargaPromo = findViewById(R.id.txtHargaPromo);
 
@@ -40,7 +40,7 @@ public class DetailPromoActivity extends AppCompatActivity {
         String strHargaPromo = defaultFormat.format(promoHargaPromo);
 
         //set text
-        txtNama.setText(promoName);
+        txtName.setText(promoName);
         txtHargaNormal.setText(""+strHargaNormal);
         txtHargaPromo.setText(""+strHargaPromo);
     }

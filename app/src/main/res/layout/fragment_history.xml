@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
     tools:context=".PromoFragment">
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -40,7 +38,7 @@
                         android:text="Kategori"
                         android:textSize="22sp"
                         android:textStyle="bold"
-                        android:gravity="center_vertical"/>
+                        android:gravity="center"/>
 
                     <androidx.constraintlayout.widget.ConstraintLayout
                         android:layout_width="wrap_content"
@@ -72,849 +70,79 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="200dp"
                 android:layout_height="50dp"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="20dp"
                 android:orientation="horizontal"
+
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.0">
+                app:layout_constraintVertical_bias="0.0"
+                android:background="@color/white">
 
                 <ImageView
                     android:layout_width="40dp"
                     android:layout_height="match_parent"
                     app:srcCompat="@drawable/filter"
-                    android:layout_marginLeft="20dp"/>
+                    android:layout_marginLeft="50dp"/>
 
                 <TextView
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Filter"
                     android:textSize="20sp"
                     android:layout_marginTop="10dp"/>
 
-                <ImageView
-                    android:layout_width="40dp"
-                    android:layout_height="match_parent"
-                    app:srcCompat="@drawable/urutkan"
-                    android:layout_marginLeft="-150dp"/>
+            </LinearLayout>
 
-                <TextView
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Urutkan"
-                    android:textSize="20sp"
-                    android:layout_marginTop="10dp"/>
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="200dp"
+                    android:layout_marginTop="-50dp"
+                    android:background="@color/white">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="match_parent"
+                        app:srcCompat="@drawable/urutkan"
+                        android:layout_marginLeft="50dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Urutkan"
+                        android:textSize="20sp"
+
+                        android:layout_marginTop="10dp"
+                        />
+
 
             </LinearLayout>
 
-            <GridLayout
+            <ScrollView
                 android:layout_width="match_parent"
-                android:layout_height="1036dp"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="10dp"
-                android:columnCount="2"
-                android:rowCount="10">
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:layout_marginLeft="20dp"
-                    app:cardCornerRadius="15dp"
-                    app:cardElevation="12dp">
-
-                    <LinearLayout
-                        android:layout_width="150dp"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="80dp"
-                            android:layout_height="80dp"
-                            android:layout_gravity="center_horizontal"
-                            android:src="@drawable/apple" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="20dp"
-                            android:gravity="center"
-                            android:text="Apel Fuji 1 Kg"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:layout_width="50dp"
-                            android:layout_height="30dp"
-                            android:layout_marginStart="5dp"
-                            android:layout_marginTop="15dp"
-                            android:text="No Member"
-                            android:textSize="10sp"
-                            android:textStyle="italic" />
-
-                        <TextView
-                            android:layout_width="60dp"
-                            android:layout_height="20dp"
-                            android:layout_marginLeft="60dp"
-                            android:layout_marginTop="-25dp"
-                            android:text="Member Only"
-                            android:textSize="10sp"
-                            android:textStyle="italic|bold" />
-
-                        <TextView
-                            android:layout_width="50dp"
-                            android:layout_height="20dp"
-                            android:layout_marginStart="5dp"
-                            android:layout_marginTop="-40dp"
-                            android:text="Rp 50.000"
-                            android:textSize="10sp"
-                            android:textStyle="italic" />
-
-                        <TextView
-                            android:layout_width="50dp"
-                            android:layout_height="20dp"
-                            android:layout_marginLeft="65dp"
-                            android:layout_marginTop="-20dp"
-                            android:text="Rp 25.000"
-                            android:textColor="@color/warna_harga"
-                            android:textSize="10sp"
-                            android:textStyle="bold" />
-
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:layout_marginLeft="30dp"
-
-                    app:cardCornerRadius="15dp"
-                    app:cardElevation="12dp">
-
-                    <LinearLayout
-                        android:layout_width="150dp"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="80dp"
-                            android:layout_height="80dp"
-                            android:layout_gravity="center_horizontal"
-                            android:src="@drawable/apple" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="20dp"
-                            android:gravity="center"
-                            android:text="Apel Fuji 1 Kg"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:layout_width="50dp"
-                            android:layout_height="30dp"
-                            android:layout_marginStart="5dp"
-                            android:layout_marginTop="20dp"
-                            android:text="No Member"
-                            android:textSize="10sp"
-                            android:textStyle="italic" />
-
-                        <TextView
-                            android:layout_width="60dp"
-                            android:layout_height="20dp"
-                            android:layout_marginLeft="60dp"
-                            android:layout_marginTop="-30dp"
-                            android:text="Member Only"
-                            android:textSize="10sp"
-                            android:textStyle="italic|bold" />
-
-                        <TextView
-                            android:layout_width="50dp"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="5dp"
-                            android:layout_marginTop="-40dp"
-                            android:text="Rp 50.000"
-                            android:textSize="10sp"
-                            android:textStyle="italic" />
-
-                        <TextView
-                            android:layout_width="50dp"
-                            android:layout_height="20dp"
-                            android:layout_marginLeft="65dp"
-                            android:layout_marginTop="-15dp"
-                            android:text="Rp 25.000"
-                            android:textColor="@color/warna_harga"
-                            android:textSize="10sp"
-                            android:textStyle="bold" />
-
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="10dp"
-                    app:cardCornerRadius="15dp"
-                    app:cardElevation="12dp">
-
-                    <LinearLayout
-                        android:layout_width="150dp"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="80dp"
-                            android:layout_height="80dp"
-                            android:layout_gravity="center_horizontal"
-                            android:src="@drawable/apple" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="20dp"
-                            android:gravity="center"
-                            android:text="Apel Fuji 1 Kg"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:layout_width="50dp"
-                            android:layout_height="25dp"
-                            android:layout_marginStart="5dp"
-                            android:layout_marginTop="20dp"
-                            android:text="No Member"
-                            android:textSize="10sp"
-                            android:textStyle="italic" />
-
-                        <TextView
-                            android:layout_width="60dp"
-                            android:layout_height="20dp"
-                            android:layout_marginLeft="60dp"
-                            android:layout_marginTop="-20dp"
-                            android:text="Member Only"
-                            android:textSize="10sp"
-                            android:textStyle="italic|bold" />
-
-                        <TextView
-                            android:layout_width="50dp"
-                            android:layout_height="20dp"
-                            android:layout_marginStart="5dp"
-                            android:layout_marginTop="-45dp"
-                            android:text="Rp 50.000"
-                            android:textSize="10sp"
-                            android:textStyle="italic" />
-
-                        <TextView
-                            android:layout_width="50dp"
-                            android:layout_height="20dp"
-                            android:layout_marginLeft="65dp"
-                            android:layout_marginTop="-20dp"
-                            android:text="Rp 25.000"
-                            android:textColor="@color/warna_harga"
-                            android:textSize="10sp"
-                            android:textStyle="bold" />
-
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginTop="10dp"
-                    app:cardCornerRadius="15dp"
-                    app:cardElevation="12dp">
-
-                    <LinearLayout
-                        android:layout_width="150dp"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="80dp"
-                            android:layout_height="80dp"
-                            android:layout_gravity="center_horizontal"
-                            android:src="@drawable/apple" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="20dp"
-                            android:gravity="center"
-                            android:text="Apel Fuji 1 Kg"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:layout_width="50dp"
-                            android:layout_height="25dp"
-                            android:layout_marginStart="5dp"
-                            android:layout_marginTop="20dp"
-                            android:text="No Member"
-                            android:textSize="10sp"
-                            android:textStyle="italic" />
-
-                        <TextView
-                            android:layout_width="60dp"
-                            android:layout_height="20dp"
-                            android:layout_marginLeft="60dp"
-                            android:layout_marginTop="-20dp"
-                            android:text="Member Only"
-                            android:textSize="10sp"
-                            android:textStyle="italic|bold" />
-
-                        <TextView
-                            android:layout_width="50dp"
-                            android:layout_height="20dp"
-                            android:layout_marginStart="5dp"
-                            android:layout_marginTop="-40dp"
-                            android:text="Rp 50.000"
-                            android:textSize="10sp"
-                            android:textStyle="italic" />
-
-                        <TextView
-                            android:layout_width="50dp"
-                            android:layout_height="20dp"
-                            android:layout_marginLeft="65dp"
-                            android:layout_marginTop="-20dp"
-                            android:text="Rp 25.000"
-                            android:textColor="@color/warna_harga"
-                            android:textSize="10sp"
-                            android:textStyle="bold" />
-
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="10dp"
-                    app:cardCornerRadius="15dp"
-                    app:cardElevation="12dp">
-
-                    <LinearLayout
-                        android:layout_width="150dp"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="80dp"
-                            android:layout_height="80dp"
-                            android:layout_gravity="center_horizontal"
-                            android:src="@drawable/apple" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="20dp"
-                            android:gravity="center"
-                            android:text="Apel Fuji 1 Kg"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:layout_width="50dp"
-                            android:layout_height="25dp"
-                            android:layout_marginStart="5dp"
-                            android:layout_marginTop="20dp"
-                            android:text="No Member"
-                            android:textSize="10sp"
-                            android:textStyle="italic" />
-
-                        <TextView
-                            android:layout_width="60dp"
-                            android:layout_height="20dp"
-                            android:layout_marginLeft="60dp"
-                            android:layout_marginTop="-20dp"
-                            android:text="Member Only"
-                            android:textSize="10sp"
-                            android:textStyle="italic|bold" />
-
-                        <TextView
-                            android:layout_width="50dp"
-                            android:layout_height="20dp"
-                            android:layout_marginStart="5dp"
-                            android:layout_marginTop="-45dp"
-                            android:text="Rp 50.000"
-                            android:textSize="10sp"
-                            android:textStyle="italic" />
-
-                        <TextView
-                            android:layout_width="50dp"
-                            android:layout_height="20dp"
-                            android:layout_marginLeft="65dp"
-                            android:layout_marginTop="-20dp"
-                            android:text="Rp 25.000"
-                            android:textColor="@color/warna_harga"
-                            android:textSize="10sp"
-                            android:textStyle="bold" />
-
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginTop="10dp"
-                    app:cardCornerRadius="15dp"
-                    app:cardElevation="12dp">
-
-                    <LinearLayout
-                        android:layout_width="150dp"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="80dp"
-                            android:layout_height="80dp"
-                            android:layout_gravity="center_horizontal"
-                            android:src="@drawable/apple" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="20dp"
-                            android:gravity="center"
-                            android:text="Apel Fuji 1 Kg"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:layout_width="50dp"
-                            android:layout_height="25dp"
-                            android:layout_marginStart="5dp"
-                            android:layout_marginTop="20dp"
-                            android:text="No Member"
-                            android:textSize="10sp"
-                            android:textStyle="italic" />
-
-                        <TextView
-                            android:layout_width="60dp"
-                            android:layout_height="20dp"
-                            android:layout_marginLeft="60dp"
-                            android:layout_marginTop="-20dp"
-                            android:text="Member Only"
-                            android:textSize="10sp"
-                            android:textStyle="italic|bold" />
-
-                        <TextView
-                            android:layout_width="50dp"
-                            android:layout_height="20dp"
-                            android:layout_marginStart="5dp"
-                            android:layout_marginTop="-45dp"
-                            android:text="Rp 50.000"
-                            android:textSize="10sp"
-                            android:textStyle="italic" />
-
-                        <TextView
-                            android:layout_width="50dp"
-                            android:layout_height="20dp"
-                            android:layout_marginLeft="65dp"
-                            android:layout_marginTop="-20dp"
-                            android:text="Rp 25.000"
-                            android:textColor="@color/warna_harga"
-                            android:textSize="10sp"
-                            android:textStyle="bold" />
-
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="10dp"
-                    app:cardCornerRadius="15dp"
-                    app:cardElevation="12dp">
-
-                    <LinearLayout
-                        android:layout_width="150dp"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="80dp"
-                            android:layout_height="80dp"
-                            android:layout_gravity="center_horizontal"
-                            android:src="@drawable/apple" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="20dp"
-                            android:gravity="center"
-                            android:text="Apel Fuji 1 Kg"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:layout_width="50dp"
-                            android:layout_height="30dp"
-                            android:layout_marginStart="5dp"
-                            android:layout_marginTop="15dp"
-                            android:text="No Member"
-                            android:textSize="10sp"
-                            android:textStyle="italic" />
-
-                        <TextView
-                            android:layout_width="60dp"
-                            android:layout_height="20dp"
-                            android:layout_marginLeft="60dp"
-                            android:layout_marginTop="-25dp"
-                            android:text="Member Only"
-                            android:textSize="10sp"
-                            android:textStyle="italic|bold" />
-
-                        <TextView
-                            android:layout_width="50dp"
-                            android:layout_height="20dp"
-                            android:layout_marginStart="5dp"
-                            android:layout_marginTop="-40dp"
-                            android:text="Rp 50.000"
-                            android:textSize="10sp"
-                            android:textStyle="italic" />
-
-                        <TextView
-                            android:layout_width="50dp"
-                            android:layout_height="20dp"
-                            android:layout_marginLeft="65dp"
-                            android:layout_marginTop="-20dp"
-                            android:text="Rp 25.000"
-                            android:textColor="@color/warna_harga"
-                            android:textSize="10sp"
-                            android:textStyle="bold" />
-
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginTop="10dp"
-                    app:cardCornerRadius="15dp"
-                    app:cardElevation="12dp">
-
-                    <LinearLayout
-                        android:layout_width="150dp"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="80dp"
-                            android:layout_height="80dp"
-                            android:layout_gravity="center_horizontal"
-                            android:src="@drawable/apple" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="20dp"
-                            android:gravity="center"
-                            android:text="Apel Fuji 1 Kg"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:layout_width="50dp"
-                            android:layout_height="30dp"
-                            android:layout_marginStart="5dp"
-                            android:layout_marginTop="15dp"
-                            android:text="No Member"
-                            android:textSize="10sp"
-                            android:textStyle="italic" />
-
-                        <TextView
-                            android:layout_width="60dp"
-                            android:layout_height="20dp"
-                            android:layout_marginLeft="60dp"
-                            android:layout_marginTop="-25dp"
-                            android:text="Member Only"
-                            android:textSize="10sp"
-                            android:textStyle="italic|bold" />
-
-                        <TextView
-                            android:layout_width="50dp"
-                            android:layout_height="20dp"
-                            android:layout_marginStart="5dp"
-                            android:layout_marginTop="-40dp"
-                            android:text="Rp 50.000"
-                            android:textSize="10sp"
-                            android:textStyle="italic" />
-
-                        <TextView
-                            android:layout_width="50dp"
-                            android:layout_height="20dp"
-                            android:layout_marginLeft="65dp"
-                            android:layout_marginTop="-20dp"
-                            android:text="Rp 25.000"
-                            android:textColor="@color/warna_harga"
-                            android:textSize="10sp"
-                            android:textStyle="bold" />
-
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="10dp"
-                    app:cardCornerRadius="15dp"
-                    app:cardElevation="12dp">
-
-                    <LinearLayout
-                        android:layout_width="150dp"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="80dp"
-                            android:layout_height="80dp"
-                            android:layout_gravity="center_horizontal"
-                            android:src="@drawable/apple" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="20dp"
-                            android:gravity="center"
-                            android:text="Apel Fuji 1 Kg"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:layout_width="50dp"
-                            android:layout_height="30dp"
-                            android:layout_marginStart="5dp"
-                            android:layout_marginTop="15dp"
-                            android:text="No Member"
-                            android:textSize="10sp"
-                            android:textStyle="italic" />
-
-                        <TextView
-                            android:layout_width="60dp"
-                            android:layout_height="20dp"
-                            android:layout_marginLeft="60dp"
-                            android:layout_marginTop="-25dp"
-                            android:text="Member Only"
-                            android:textSize="10sp"
-                            android:textStyle="italic|bold" />
-
-                        <TextView
-                            android:layout_width="50dp"
-                            android:layout_height="20dp"
-                            android:layout_marginStart="5dp"
-                            android:layout_marginTop="-40dp"
-                            android:text="Rp 50.000"
-                            android:textSize="10sp"
-                            android:textStyle="italic" />
-
-                        <TextView
-                            android:layout_width="50dp"
-                            android:layout_height="20dp"
-                            android:layout_marginLeft="65dp"
-                            android:layout_marginTop="-20dp"
-                            android:text="Rp 25.000"
-                            android:textColor="@color/warna_harga"
-                            android:textSize="10sp"
-                            android:textStyle="bold" />
-
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginTop="10dp"
-                    app:cardCornerRadius="15dp"
-                    app:cardElevation="12dp">
-
-                    <LinearLayout
-                        android:layout_width="150dp"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="80dp"
-                            android:layout_height="80dp"
-                            android:layout_gravity="center_horizontal"
-                            android:src="@drawable/apple" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="20dp"
-                            android:gravity="center"
-                            android:text="Apel Fuji 1 Kg"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:layout_width="50dp"
-                            android:layout_height="30dp"
-                            android:layout_marginStart="5dp"
-                            android:layout_marginTop="15dp"
-                            android:text="No Member"
-                            android:textSize="10sp"
-                            android:textStyle="italic" />
-
-                        <TextView
-                            android:layout_width="60dp"
-                            android:layout_height="20dp"
-                            android:layout_marginLeft="60dp"
-                            android:layout_marginTop="-25dp"
-                            android:text="Member Only"
-                            android:textSize="10sp"
-                            android:textStyle="italic|bold" />
-
-                        <TextView
-                            android:layout_width="50dp"
-                            android:layout_height="20dp"
-                            android:layout_marginStart="5dp"
-                            android:layout_marginTop="-40dp"
-                            android:text="Rp 50.000"
-                            android:textSize="10sp"
-                            android:textStyle="italic" />
-
-                        <TextView
-                            android:layout_width="50dp"
-                            android:layout_height="20dp"
-                            android:layout_marginLeft="65dp"
-                            android:layout_marginTop="-20dp"
-                            android:text="Rp 25.000"
-                            android:textColor="@color/warna_harga"
-                            android:textSize="10sp"
-                            android:textStyle="bold" />
-
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="10dp"
-                    app:cardCornerRadius="15dp"
-                    app:cardElevation="12dp">
-
-                    <LinearLayout
-                        android:layout_width="150dp"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="80dp"
-                            android:layout_height="80dp"
-                            android:layout_gravity="center_horizontal"
-                            android:src="@drawable/apple" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="20dp"
-                            android:gravity="center"
-                            android:text="Apel Fuji 1 Kg"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:layout_width="50dp"
-                            android:layout_height="30dp"
-                            android:layout_marginStart="5dp"
-                            android:layout_marginTop="15dp"
-                            android:text="No Member"
-                            android:textSize="10sp"
-                            android:textStyle="italic" />
-
-                        <TextView
-                            android:layout_width="60dp"
-                            android:layout_height="20dp"
-                            android:layout_marginLeft="60dp"
-                            android:layout_marginTop="-25dp"
-                            android:text="Member Only"
-                            android:textSize="10sp"
-                            android:textStyle="italic|bold" />
-
-                        <TextView
-                            android:layout_width="50dp"
-                            android:layout_height="20dp"
-                            android:layout_marginStart="5dp"
-                            android:layout_marginTop="-40dp"
-                            android:text="Rp 50.000"
-                            android:textSize="10sp"
-                            android:textStyle="italic" />
-
-                        <TextView
-                            android:layout_width="50dp"
-                            android:layout_height="20dp"
-                            android:layout_marginLeft="65dp"
-                            android:layout_marginTop="-20dp"
-                            android:text="Rp 25.000"
-                            android:textColor="@color/warna_harga"
-                            android:textSize="10sp"
-                            android:textStyle="bold" />
-
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:layout_marginLeft="30dp"
-                    android:layout_marginTop="10dp"
-                    app:cardCornerRadius="15dp"
-                    app:cardElevation="12dp">
-
-                    <LinearLayout
-                        android:layout_width="150dp"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical">
-
-                        <ImageView
-                            android:layout_width="80dp"
-                            android:layout_height="80dp"
-                            android:layout_gravity="center_horizontal"
-                            android:src="@drawable/apple" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="20dp"
-                            android:gravity="center"
-                            android:text="Apel Fuji 1 Kg"
-                            android:textStyle="bold" />
-
-                        <TextView
-                            android:layout_width="50dp"
-                            android:layout_height="30dp"
-                            android:layout_marginStart="5dp"
-                            android:layout_marginTop="15dp"
-                            android:text="No Member"
-                            android:textSize="10sp"
-                            android:textStyle="italic" />
-
-                        <TextView
-                            android:layout_width="60dp"
-                            android:layout_height="20dp"
-                            android:layout_marginLeft="60dp"
-                            android:layout_marginTop="-25dp"
-                            android:text="Member Only"
-                            android:textSize="10sp"
-                            android:textStyle="italic|bold" />
-
-                        <TextView
-                            android:layout_width="50dp"
-                            android:layout_height="20dp"
-                            android:layout_marginStart="5dp"
-                            android:layout_marginTop="-40dp"
-                            android:text="Rp 50.000"
-                            android:textSize="10sp"
-                            android:textStyle="italic" />
-
-                        <TextView
-                            android:layout_width="50dp"
-                            android:layout_height="20dp"
-                            android:layout_marginLeft="65dp"
-                            android:layout_marginTop="-20dp"
-                            android:text="Rp 25.000"
-                            android:textColor="@color/warna_harga"
-                            android:textSize="10sp"
-                            android:textStyle="bold" />
-
-                    </LinearLayout>
-                </androidx.cardview.widget.CardView>
-            </GridLayout>
-
+                android:layout_height="800dp"
+
+                android:background="@color/grey">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:scrollbars="vertical"
+                    app:spanCount="2"
+                    tools:listitem="@layout/list_product" />
+
+            </ScrollView>
         </LinearLayout>
-    </ScrollView>
+
+
+
 
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
@@ -922,9 +150,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_marginTop="840dp"
+        android:layout_marginTop="820dp"
         android:orientation="vertical"
         app:menu="@menu/bottom_menu"
         tools:ignore="MissingConstraints"/>
 
-</FrameLayout>
+</RelativeLayout>

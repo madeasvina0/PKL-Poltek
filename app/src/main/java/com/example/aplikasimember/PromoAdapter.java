@@ -45,7 +45,7 @@ public class PromoAdapter extends RecyclerView.Adapter<PromoAdapter.MyViewHolder
     public void onBindViewHolder(@NonNull PromoAdapter.MyViewHolder holder, int position) {
         //inisialisasi object promo
         Promo promo = promoArrayList.get(position);
-        holder.txtNamaBarang.setText(promo.nama);
+        holder.txtNames.setText(promo.name);
         holder.txtNormal.setText(""+promo.hargaNormal);
         holder.txtPromo.setText(""+promo.hargaPromo);
         holder.imgPromo.setImageResource(promo.titleImg);
@@ -54,7 +54,7 @@ public class PromoAdapter extends RecyclerView.Adapter<PromoAdapter.MyViewHolder
         holder.cvPromo.setOnClickListener(view -> {
             //pindah ke activity promo detail
             Intent intent = new Intent(this.context, DetailPromoActivity.class);
-            intent.putExtra("promo_nama", promo.nama);
+            intent.putExtra("promo_nama", promo.name);
             intent.putExtra("promo_harga_normal", promo.hargaNormal);
             intent.putExtra("promo_harga_promo", promo.hargaPromo);
             intent.putExtra("promo_img", promo.titleImg);
@@ -71,7 +71,7 @@ public class PromoAdapter extends RecyclerView.Adapter<PromoAdapter.MyViewHolder
 
     public static class MyViewHolder extends RecyclerView.ViewHolder{
 
-        TextView txtNamaBarang;
+        TextView txtNames;
         TextView txtNormal;
         TextView txtPromo;
 
@@ -80,7 +80,7 @@ public class PromoAdapter extends RecyclerView.Adapter<PromoAdapter.MyViewHolder
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
             //inisialisasi adapter ke view
-            txtNamaBarang = itemView.findViewById(R.id.txtNama);
+            txtNames = itemView.findViewById(R.id.txtName);
             txtNormal = itemView.findViewById(R.id.txtHargaNormal);
             txtPromo = itemView.findViewById(R.id.txtHargaPromo);
             imgPromo = itemView.findViewById(R.id.imgPromo);

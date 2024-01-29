@@ -4,21 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
     tools:context=".HomeFragment">
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="900dp"
             android:orientation="vertical">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="70dp"
+
+                android:layout_marginBottom="80dp"
                 android:background="#2196F3">
 
                 <LinearLayout
@@ -82,7 +85,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="45dp"
                 android:orientation="vertical"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="90dp"
                 android:layout_marginStart="20dp"
                 android:layout_marginEnd="20dp"
                 android:background="@drawable/kotak_lokasi">
@@ -103,13 +106,13 @@
                 android:layout_width="415dp"
                 android:layout_height="220dp"
                 app:srcCompat="@drawable/member"
-                android:layout_marginTop="10dp"/>
+                android:layout_marginTop="150dp"/>
 
             <TextView
                 android:layout_width="100dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="15dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="390dp"
                 android:text="Promo"
                 android:textColor="@color/warna_harga"
                 android:textSize="18sp"
@@ -120,7 +123,7 @@
                 android:layout_height="40dp"
                 android:text="Lainnya"
                 android:layout_marginLeft="300dp"
-                android:layout_marginTop="-30dp"
+                android:layout_marginTop="380dp"
                 android:id="@+id/btnFragment1"
                 tools:ignore="HardcodedText" />
 
@@ -130,7 +133,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="170dp"
                 android:layout_marginLeft="15dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="420dp"
                 android:layout_marginRight="25dp"
                 tools:listitem="@layout/list_promo" />
 
@@ -141,7 +144,7 @@
                 android:text="Produk"
                 android:textSize="18sp"
                 android:textStyle="bold"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="620dp"
                 android:layout_marginStart="20dp"
                 android:textColor="@color/warna_harga"/>
 
@@ -152,7 +155,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="170dp"
                 android:layout_marginLeft="15dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="650dp"
                 android:layout_marginRight="25dp"
                 android:scrollbars="horizontal"
                 tools:listitem="@layout/list_product">
@@ -160,7 +163,7 @@
             </androidx.recyclerview.widget.RecyclerView>
 
 
-        </LinearLayout>
+        </RelativeLayout>
     </ScrollView>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView

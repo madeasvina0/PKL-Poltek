@@ -9,12 +9,12 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="950dp"
         android:background="@color/grey">
 
-        <LinearLayout
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="vertical">
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -78,37 +78,41 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="350dp"
+                android:layout_height="320dp"
+                android:layout_marginTop="70dp"
                 android:background="@color/white" />
 
             <ImageView
                 android:id="@+id/imgPromo"
                 android:layout_width="250dp"
                 android:layout_height="250dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="-300dp"
-                android:src="@drawable/berry" />
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="100dp"
+                android:src="@drawable/apple" />
 
             <LinearLayout
+
                 android:layout_width="match_parent"
-                android:layout_height="130dp"
-                android:layout_marginTop="70dp"
-                android:background="@color/white" />
+                android:layout_height="150dp"
+                android:layout_marginTop="405dp"
+                android:background="@color/white"
+                android:orientation="vertical" />
 
             <TextView
                 android:id="@+id/txtName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
-                android:layout_marginTop="-120dp"
-                android:text="Cherry 1 Kg"
-                android:textSize="23sp"
+                android:layout_marginTop="410dp"
+                android:text="Apel Fuji 1 Kg"
+                android:textSize="22sp"
                 android:textStyle="bold" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
+                android:layout_marginTop="450dp"
                 android:text="Masa berlaku promo 22 Desember 2023 - 1 Januari 2023"
                 android:textColor="@color/promo"
                 android:textStyle="italic" />
@@ -117,15 +121,15 @@
                 android:layout_width="100dp"
                 android:layout_height="50dp"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="490dp"
                 android:src="@drawable/fullbintang" />
 
 
             <TextView
                 android:layout_width="100dp"
                 android:layout_height="match_parent"
-                android:layout_marginStart="205dp"
-                android:layout_marginTop="-25dp"
+                android:layout_marginStart="200dp"
+                android:layout_marginTop="525dp"
                 android:text="Non Member"
                 android:textStyle="italic" />
 
@@ -134,7 +138,7 @@
                 android:layout_width="100dp"
                 android:layout_height="match_parent"
                 android:layout_marginStart="200dp"
-                android:layout_marginTop="-50dp"
+                android:layout_marginTop="490dp"
                 android:text="Rp 40.000"
                 android:textColor="@color/black"
                 android:textSize="18sp"
@@ -144,7 +148,7 @@
                 android:layout_width="100dp"
                 android:layout_height="match_parent"
                 android:layout_marginStart="310dp"
-                android:layout_marginTop="7dp"
+                android:layout_marginTop="525dp"
                 android:text="Member Only"
                 android:textStyle="bold|italic" />
 
@@ -153,7 +157,7 @@
                 android:layout_width="100dp"
                 android:layout_height="match_parent"
                 android:layout_marginStart="310dp"
-                android:layout_marginTop="-51dp"
+                android:layout_marginTop="490dp"
                 android:text="Rp 20.000"
                 android:textColor="@color/warna_harga"
                 android:textSize="18sp"
@@ -162,7 +166,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="120dp"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="570dp"
                 android:background="@color/white"
                 android:orientation="vertical">
 
@@ -184,11 +188,43 @@
 
             </LinearLayout>
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginTop="710dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/location2" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Lokasi Cabang"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="-340dp"
+                    android:layout_marginTop="35dp"
+                    android:text="Alamat Lokasi Cabang" />
+
+
+            </LinearLayout>
+
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
+                android:layout_height="350dp"
+                android:layout_marginTop="800dp"
                 android:background="@color/white"
                 android:orientation="vertical">
 
@@ -204,13 +240,13 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="10dp"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginTop="20dp"
                     android:text="@string/detail_promo"
                     android:textSize="18sp" />
             </LinearLayout>
 
 
-        </LinearLayout>
+        </RelativeLayout>
 
 
     </ScrollView>
