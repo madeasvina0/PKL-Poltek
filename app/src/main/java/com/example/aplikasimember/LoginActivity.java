@@ -18,8 +18,8 @@ public class LoginActivity extends AppCompatActivity {
 
     private EditText etNoHp, etPassword;
 
-    private String NoHp = "0812345678";
-    private String password = "Admin";
+    private String NoHp = "12345";
+    private String password = "admin";
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
