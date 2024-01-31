@@ -139,31 +139,31 @@ public class HomeFragment extends Fragment {
         promoArrayList = new ArrayList<>();
 
         promoNames = new String[]{
-                "Apel A",
-                "Apel B",
-                "Apel C",
-                "Apel D",
-                "Apel E",
-                "Apel F",
+                "Item A",
+                "Item B",
+                "Item C",
+                "Item D",
+                "Item E",
+                "Item F",
         };
 
         promoHargaNormal = new Double[]{
-                20000.00,
-                20000.00,
-                20000.00,
-                20000.00,
-                20000.00,
-                20000.00,
+                2000.00,
+                2000.00,
+                2000.00,
+                2000.00,
+                2000.00,
+                2000.00,
         };
 
 
         promoHargaPromo = new Double[]{
-                10000.00,
-                10000.00,
-                10000.00,
-                10000.00,
-                10000.00,
-                10000.00,
+                1000.00,
+                1000.00,
+                1000.00,
+                1000.00,
+                1000.00,
+                1000.00,
         };
 
 

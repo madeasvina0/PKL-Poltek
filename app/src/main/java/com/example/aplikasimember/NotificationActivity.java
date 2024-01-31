@@ -31,6 +31,10 @@ public class NotificationActivity extends AppCompatActivity {
         setContentView(R.layout.activity_notification);
 
 
+        RecyclerView recyclerView = findViewById(R.id.recyclerview);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        RecyclerView.Adapter NotifAdapter = null;
+        recyclerView.setAdapter(null);
         dataInitialize();
 
     }
@@ -96,9 +100,9 @@ public class NotificationActivity extends AppCompatActivity {
 
         };
 
-        for (int i =0; i< notificationHeading.length; i++){
+        for (int c =0; c< notificationHeading.length; c++){
 
-            Notification notification = new Notification(notificationHeading[i], notificationTgl[i], notificationDesc[i] );
+            Notification notification = new Notification(notificationHeading[c], notificationTgl[c], notificationDesc[c] );
             notificationArrayList.add(notification);
         }
 

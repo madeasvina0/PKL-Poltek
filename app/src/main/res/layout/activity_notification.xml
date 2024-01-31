@@ -7,6 +7,7 @@
     tools:context=".NotificationActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
         android:layout_width="match_parent"
         android:layout_height="70dp"
         tools:ignore="MissingConstraints">
@@ -25,10 +26,9 @@
                 android:id="@+id/imB_1"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:src="@drawable/arrowbalik"
+                android:layout_marginStart="10dp"
                 android:background="@color/transparant"
-                android:layout_marginStart="10dp"/>
-
+                android:src="@drawable/arrowbalik" />
 
 
             <TextView
@@ -50,8 +50,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="20dp"
-                    android:src="@drawable/bell"
                     android:background="@color/transparant"
+                    android:src="@drawable/bell"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />

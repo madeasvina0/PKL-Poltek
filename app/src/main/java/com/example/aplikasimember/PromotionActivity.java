@@ -43,7 +43,7 @@ public class PromotionActivity extends AppCompatActivity {
                     loadFragment(new HomeFragment(), false);
 
                 } else if (itemId == R.id.bottom_discount) {
-                    loadFragment(new PromoFragment(), true);
+                    loadFragment(new PromoFragment(), false);
 
                 } else if (itemId == R.id.bottom_location) {
                     loadFragment(new LocationFragment(), false);

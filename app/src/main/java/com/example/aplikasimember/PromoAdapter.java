@@ -66,6 +66,7 @@ public class PromoAdapter extends RecyclerView.Adapter<PromoAdapter.MyViewHolder
 
     @Override
     public int getItemCount() {
+
         return promoArrayList.size();
     }
 

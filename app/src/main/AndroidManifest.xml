@@ -14,9 +14,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AplikasiMember"
         android:usesCleartextTraffic="true"
-        tools:targetApi="q">
+        >
         <activity
             android:name=".HistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StLocationActivity"
             android:exported="false" />
         <activity
             android:name=".NotificationActivity"

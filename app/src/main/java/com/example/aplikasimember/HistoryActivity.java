@@ -44,7 +44,7 @@ public class HistoryActivity extends AppCompatActivity {
                     loadFragment(new LocationFragment(), false);
 
                 } else if (itemId == R.id.bottom_history) {
-                    loadFragment(new HistoryFragment(), true);
+                    loadFragment(new HistoryFragment(), false);
 
                 } else { //bottom profile
                     loadFragment(new ProfileFragment(), false);

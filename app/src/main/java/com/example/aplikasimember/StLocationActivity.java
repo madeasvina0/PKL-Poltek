@@ -39,7 +39,7 @@ public class StLocationActivity extends AppCompatActivity {
                     loadFragment(new PromoFragment(), false);
 
                 } else if (itemId == R.id.bottom_location) {
-                    loadFragment(new LocationFragment(), true);
+                    loadFragment(new LocationFragment(), false);
 
                 } else if (itemId == R.id.bottom_history) {
                     loadFragment(new HistoryFragment(), false);

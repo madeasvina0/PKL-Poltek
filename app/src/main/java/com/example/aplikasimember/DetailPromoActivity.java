@@ -12,7 +12,7 @@ import android.widget.TextView;
 import java.text.NumberFormat;
 
 public class DetailPromoActivity extends AppCompatActivity {
-    String promoName;
+    String promoNames;
     Double promoHargaPromo;
     Double promoHargaNormal;
     int imgPromo;
@@ -58,7 +58,7 @@ public class DetailPromoActivity extends AppCompatActivity {
 
 
         //ambil data dari intent extra
-        promoName = getIntent().getStringExtra("promo_name");
+        promoNames = getIntent().getStringExtra("promo_name");
         promoHargaPromo = getIntent().getDoubleExtra("promo_harga_promo",0);
         promoHargaNormal = getIntent().getDoubleExtra("promo_harga_normal",0);
 
@@ -73,7 +73,7 @@ public class DetailPromoActivity extends AppCompatActivity {
         String strHargaPromo = defaultFormat.format(promoHargaPromo);
 
         //set text
-        txtName.setText(promoName);
+        txtName.setText(promoNames);
         txtHargaNormal.setText(""+strHargaNormal);
         txtHargaPromo.setText(""+strHargaPromo);
     }
