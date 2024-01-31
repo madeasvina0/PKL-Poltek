@@ -14,9 +14,12 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.content.Intent;
+import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.FrameLayout;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
@@ -25,7 +28,6 @@ import android.widget.Toast;
 import androidx.annotation.RequiresApi;
 
 import com.example.aplikasimember.databinding.ActivityMainBinding;
-import com.google.android.filament.View;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 import com.google.android.material.tabs.TabLayout;
@@ -38,7 +40,10 @@ public class MainActivity extends AppCompatActivity  {
     private BottomNavigationView bottomNavigationView;
     private FrameLayout frameLayout;
 
+    private ImageView imgCart, imgNotif;
 
+
+    private ImageButton imageButton;
 
     @SuppressLint("MissingInflatedId")
     @Override
@@ -46,14 +51,19 @@ public class MainActivity extends AppCompatActivity  {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
+
         FragmentTransaction fragmentTransaction = getSupportFragmentManager().beginTransaction();
 
         fragmentTransaction.add(R.id.frame_layout, new Fragment());
         fragmentTransaction.commit();
 
 
+
         bottomNavigationView= findViewById(R.id.bottom_navigation);
         frameLayout = findViewById(R.id.frame_layout);
+
+
 
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -87,6 +97,7 @@ public class MainActivity extends AppCompatActivity  {
             }
 
 
+
     private void loadFragment(Fragment fragment, boolean isAppInitialized) {
                 FragmentManager fragmentManager = getSupportFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
@@ -100,6 +111,8 @@ public class MainActivity extends AppCompatActivity  {
 
                 fragmentTransaction.commit();
             }
+
+
 
 
 }

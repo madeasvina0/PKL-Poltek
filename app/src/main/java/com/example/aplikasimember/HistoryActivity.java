@@ -5,30 +5,25 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
 import android.annotation.SuppressLint;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.FrameLayout;
 
-import com.google.android.gms.tflite.acceleration.Model;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
-import java.util.ArrayList;
-
-public class PromotionActivity extends AppCompatActivity {
+public class HistoryActivity extends AppCompatActivity {
 
     private BottomNavigationView bottomNavigationView;
     private FrameLayout frameLayout;
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_promotion);
-        replaceFragment(new PromoFragment());
+        setContentView(R.layout.activity_history);
+        replaceFragment(new HistoryFragment());
 
         bottomNavigationView = findViewById(R.id.bottom_navigation);
         frameLayout = findViewById(R.id.frame_layout);
@@ -43,13 +38,13 @@ public class PromotionActivity extends AppCompatActivity {
                     loadFragment(new HomeFragment(), false);
 
                 } else if (itemId == R.id.bottom_discount) {
-                    loadFragment(new PromoFragment(), true);
+                    loadFragment(new PromoFragment(), false);
 
                 } else if (itemId == R.id.bottom_location) {
                     loadFragment(new LocationFragment(), false);
 
                 } else if (itemId == R.id.bottom_history) {
-                    loadFragment(new HistoryFragment(), false);
+                    loadFragment(new HistoryFragment(), true);
 
                 } else { //bottom profile
                     loadFragment(new ProfileFragment(), false);
@@ -60,7 +55,7 @@ public class PromotionActivity extends AppCompatActivity {
                 return true;
             }
         });
-        loadFragment(new PromoFragment(), true);
+        loadFragment(new HistoryFragment(), true);
 
     }
 
@@ -89,6 +84,3 @@ public class PromotionActivity extends AppCompatActivity {
 
     }
 }
-
-
-

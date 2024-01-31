@@ -12,4 +12,5 @@
     <color name="warna_harga">#0295ff</color>
     <color name="promo">#FFFFC107</color>
     <color name="bg_color">#FEFEFE</color>
+    <color name="transparant">#00FEFEFE</color>
 </resources>

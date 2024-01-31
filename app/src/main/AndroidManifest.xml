@@ -16,6 +16,18 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="q">
         <activity
+            android:name=".HistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NotificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ResetPasswordActivity"
+            android:exported="false" />
+        <activity
             android:name=".DetailLokasiActivity"
             android:exported="false" />
         <activity
@@ -25,13 +37,19 @@
             android:name=".PromotionActivity"
             android:exported="false" />
         <activity
-            android:name=".DetailProdukActivity"
-            android:exported="false" />
-        <activity
             android:name=".DetailPromoActivity"
             android:exported="false" />
         <activity
+            android:name=".DetailProdukActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

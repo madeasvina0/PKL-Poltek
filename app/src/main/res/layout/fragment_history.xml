@@ -124,14 +124,12 @@
 
             <ScrollView
                 android:layout_width="match_parent"
-                android:layout_height="800dp"
-
-                android:background="@color/grey">
+                android:layout_height="750dp">
 
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/recyclerview"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="600dp"
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="20dp"
                     android:scrollbars="vertical"
