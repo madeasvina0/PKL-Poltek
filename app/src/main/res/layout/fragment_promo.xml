@@ -93,7 +93,8 @@
 
                 <ScrollView
                     android:layout_width="match_parent"
-                    android:layout_height="800dp">
+                    android:layout_height="800dp"
+                    android:background="@color/grey">
 
                     <androidx.recyclerview.widget.RecyclerView
                         android:id="@+id/recyclerview"

@@ -106,32 +106,14 @@
                 android:textColor="@color/white"
                 android:textColorHint="@color/white" />
 
-            <EditText
-                android:id="@+id/etJenis"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="32dp"
-                android:layout_marginTop="12dp"
-                android:layout_marginEnd="16dp"
-                android:background="@drawable/bg_input"
-                android:drawableLeft="@drawable/baseline_person_24"
-                android:ems="10"
-                android:hint="Jenis Kelamin"
-                android:inputType="textPersonName"
-                android:paddingLeft="20dp"
-                android:paddingTop="13dp"
-                android:paddingRight="20dp"
-                android:paddingBottom="13dp"
-                android:textColor="@color/white"
-                android:textColorHint="@color/white"
-                 />
+
 
             <EditText
                 android:id="@+id/etEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="32dp"
-                android:layout_marginTop="12dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginEnd="16dp"
                 android:background="@drawable/bg_input"
                 android:drawableLeft="@drawable/baseline_email_24"
@@ -145,6 +127,26 @@
                 android:textColor="@color/white"
                 android:textColorHint="@color/white"
                 />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:textColorHint="@color/white"
+                android:hint="@string/select">
+
+                <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:id="@+id/auto_complete_txt"
+                    android:inputType="none"
+
+                    android:background="@drawable/bg_input"
+                    android:layout_marginStart="16dp"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
 
             <TextView
                 android:id="@+id/tvRegister"
